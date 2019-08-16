@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Source+Serif+Pro:400,700&display=swap');
+
+* { box-sizing: border-box; }
+
+.group::after, main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  color: #252525;
+  
+  font-family: 'Source Serif Pro', serif;
+  font-size: 18px;
+  line-height: 1.3;
+  
+  padding: 1em 5em;
+
+  @media (max-width: 850px) {
+    padding: 1em .2em;
+  }
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #024;
+  
+  font-family: 'EB Garamond', serif;
+  font-variant: small-caps;
+  
+  margin: 0;
+  margin-bottom: .25em;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #024;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+header {
+  border-bottom: 1px solid;
+  font-variant: small-caps;
+  
+  h1 {
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-bottom: .5em;
+    font-size: .9em
+  }
+}
+
+nav {
+  border-bottom: 4px solid;
+  
+  margin-bottom: .75em;
+  padding: .25em 0;
+
+  a {
+    color: #024;
+    
+    font-family: 'EB Garamond', serif;
+  }
+  
+  ul {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      padding-right: .5em;
+    }
+  }
+}
+
+main {
+  padding-bottom: 1em;
+  border-bottom: 4px solid;
+}
+
+footer {
+  text-align: center;
+  
+  &::after {
+    content: '⚜';
+    color: #cde;
+    display: block;
+    font-size: 3em;
+  }
+  
+  padding-top: .5em;
+}
+
+
+img.church-photo {
+  float: right;
+  width: 50%;
+  border: 4px double;
+}
+

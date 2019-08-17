@@ -33,6 +33,13 @@ body {
   padding: 1em;
 }
 
+@media (max-width: 850px) {
+  body {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
 img {
   max-width: 100%;
 }

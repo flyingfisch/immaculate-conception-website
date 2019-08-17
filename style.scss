@@ -10,6 +10,7 @@
 
 html {
   color: #252525;
+  background-image: url('images/lightpaperfibers.png');
   
   font-family: 'Source Serif Pro', serif;
   font-size: 18px;
@@ -23,8 +24,11 @@ html {
 }
 
 body {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 img {
@@ -44,6 +48,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0;
   margin-bottom: 1em;
+}
+
+ul {
+  margin-top: 0;
 }
 
 a {
@@ -116,5 +124,6 @@ img.church-photo {
   float: right;
   width: 50%;
   border: 4px double;
+  margin-left: .5em;
 }
 
